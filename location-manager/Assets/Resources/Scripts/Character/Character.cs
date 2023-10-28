@@ -13,6 +13,7 @@ public class Character: MonoBehaviour
         Class = classForSpawn;
     }
 
+
     private IEnumerator StartPumping()
     {
         yield return new WaitForSeconds(SPEED_OF_PUMPING);
