@@ -6,6 +6,8 @@ public class CharactersSpawner : MonoBehaviour
 {
     public static CharactersSpawner Instance { get; set; }
 
+    [SerializeField] private GameObject characterPrefab;
+
     private void Awake()
     {
         if (Instance != null) return;
@@ -13,7 +15,9 @@ public class CharactersSpawner : MonoBehaviour
     }
     public void SpawnNewCharacter(Location location)
     {
-        Character newCharacter = new Character(ChooseClassForCharacter());
+        var newCharacter = Instantiate(characterPrefab).GetComponent<Character>();
+        newCharacter.SetClass(ChooseClassForCharacter());
+        newCharacter.LocationOsStay = location;
         location.AddCharacter(newCharacter);
     }
 

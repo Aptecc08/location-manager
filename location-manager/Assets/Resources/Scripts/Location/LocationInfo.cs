@@ -6,7 +6,7 @@ using UnityEngine;
 public class LocationInfo : ScriptableObject
 {
     public LocationType LocationType;
-    //public Mobs[] AvaliableMobs; массив с мобыми доступными в этой локации
+    public List<Mob> AvaliableMobs = new List<Mob>(); 
     //public Resource[] AvalibleResources; массив с русурсами доступными в локации
     public int MaxAmountOfCharacters;
     public int MaxAmountOfMobs;

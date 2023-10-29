@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Forest
   m_EditorClassIdentifier: 
   LocationType: 0
+  AvaliableMobs: []
   MaxAmountOfCharacters: 10
   MaxAmountOfMobs: 10
   MaxAmountOfResources: 10
-  Lvl: 1
+  Lvl: 0
   LocationSprite: {fileID: 0}

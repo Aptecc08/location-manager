@@ -35,13 +35,22 @@ public class Location : MonoBehaviour
 
     public void AddCharacter(Character character)
     {
-        CharactersOnLocation.Add(character);
-        UpdateInfo();
+        if (CurrentAmountOfCharacters < 10f)
+        {
+            CurrentAmountOfCharacters++;
+            CharactersOnLocation.Add(character);
+            UpdateInfo();
+        }
     }
 
     private void UpdateInfo()
     {
         CurrentAmountOfCharacters = CharactersOnLocation.Count;
+    }
+
+    public void RemoveMob()
+    {
+        CurrnetAmountOfMobs--;
     }
 
     private IEnumerator StartSpawnCharacters()

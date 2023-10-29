@@ -349,14 +349,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Resources/Scripts/Character/Character.cs"
 "Assets/Resources/Scripts/Character/CharactersSpawner.cs"
+"Assets/Resources/Scripts/Character/ChatartersConstants.cs"
 "Assets/Resources/Scripts/Character/ClassesOfCharacters.cs"
 "Assets/Resources/Scripts/Character/Commands/KillCommand.cs"
+"Assets/Resources/Scripts/Character/Commands/RelocateCommand.cs"
 "Assets/Resources/Scripts/Character/Commands/SpawnCharacterCommnad.cs"
 "Assets/Resources/Scripts/CommandController.cs"
 "Assets/Resources/Scripts/ICommand.cs"
 "Assets/Resources/Scripts/Location/Location.cs"
 "Assets/Resources/Scripts/Location/LocationInfo.cs"
 "Assets/Resources/Scripts/Location/LocationType.cs"
+"Assets/Resources/Scripts/Mob.cs"
 -langversion:9.0
 
 /deterministic
